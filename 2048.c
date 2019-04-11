@@ -287,6 +287,7 @@ void setBufferedInput(bool enable) {
 	}
 }
 
+/*
 int test() {
 	uint8_t array[SIZE];
 	// these are exponents with base 2 (1=2 2=4 3=8)
@@ -348,6 +349,8 @@ int test() {
 	}
 	return !success;
 }
+*/
+
 
 void signal_callback_handler(int signum) {
 	printf("         TERMINATED         \n");
@@ -361,9 +364,11 @@ int main(int argc, char *argv[]) {
 	char c;
 	bool success;
 
+	/*
 	if (argc == 2 && strcmp(argv[1],"test")==0) {
 		return test();
 	}
+	*/
 	if (argc == 2 && strcmp(argv[1],"blackwhite")==0) {
 		scheme = 1;
 	}
