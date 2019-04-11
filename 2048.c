@@ -17,7 +17,7 @@
 #include <time.h>
 #include <signal.h>
 
-#define SIZE 4
+#define SIZE 5
 uint32_t score=0;
 uint8_t scheme=0;
 
