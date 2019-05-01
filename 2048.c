@@ -57,15 +57,15 @@ void drawBoard(uint8_t board[SIZE][SIZE]) {
 
 	printf("2048.c %17d pts\n\n", score);
 
-	for (y = 0; y < SIZE; y++) {
-		for (x = 0; x < SIZE; x++) {
+	for (x = 0; x < SIZE; x++) {
+		for (y = 0; y < SIZE; y++) {
 			getColor(board[x][y], color, 40);   // 버퍼안 color의 값을 "\033[38;5;%d;48;5;%dm"로 저장
 			printf("%s", color);            // color를 출력하면 그 다음 타일색이 출력됨
 			printf("       ");
 			printf("%s", reset);            // 색을 초기화 시킴
 		}
 		printf("\n");
-		for (x = 0; x < SIZE; x++) {
+		for (y = 0; y < SIZE; y++) {
 			getColor(board[x][y], color, 40);
 			printf("%s", color);
 			if (board[x][y] != 0) { // board[][]의 값이 0 이면 숫자를 표현할 필요가 없으니깐
@@ -81,7 +81,7 @@ void drawBoard(uint8_t board[SIZE][SIZE]) {
 			printf("%s", reset);
 		}
 		printf("\n");
-		for (x = 0; x < SIZE; x++) {  //위에서 반복
+		for (y = 0; y < SIZE; y++) {  //위에서 반복
 			getColor(board[x][y], color, 40);
 			printf("%s", color);
 			printf("       ");
@@ -395,22 +395,22 @@ int main(int argc, char *argv[]) {
 			break;
 		}
 		switch (c) {
-		case 97:	// 'a' key
-		case 104:	// 'h' key
-		case 68:	// left arrow
-			success = moveLeft(board);  break;
-		case 100:	// 'd' key
-		case 108:	// 'l' key
-		case 67:	// right arrow
-			success = moveRight(board); break;
-		case 119:	// 'w' key
-		case 107:	// 'k' key
-		case 65:	// up arrow
+		case 97:	// 'w' key
+		case 104:	// 'k' key
+		case 68:	// up arrow
 			success = moveUp(board);    break;
-		case 115:	// 's' key
-		case 106:	// 'j' key
-		case 66:	// down arrow
+		case 100:	// 's' key
+		case 108:	// 'j' key
+		case 67:	// down arrow
 			success = moveDown(board);  break;
+		case 119:	// 'a' key
+		case 107:	// 'h' key
+		case 65:	// left arrow
+			success = moveLeft(board);  break;
+		case 115:	// 'd' key
+		case 106:	// 'l' key
+		case 66:	// right arrow
+			success = moveRight(board); break;
 		default: success = false;
 		}
 		if (success) {
