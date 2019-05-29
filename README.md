@@ -1,6 +1,10 @@
 2048.c
 ======
+<<<<<<< HEAD
 slack 주소 https://opensourcechat-group.slack.com/messages/DK41QTEG6/
+=======
+======
+>>>>>>> 84080b50e96f6fe78f80c4f8c5923874eac2a5cb
 ![screenshot](screenshot.png)
 =====
 Console version of the game "2048" for GNU/Linux
