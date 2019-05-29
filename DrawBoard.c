@@ -2,10 +2,11 @@
 #include<stdlib.h>
 #include<string.h>
 #include<stdbool.h>
-#include"2048Color.h"
+#include"DrawBoard.h"
 
 uint32_t score = 0;
 uint8_t scheme = 0;
+
 /*16013076 박재현*/
 /* board[][]에 '1(2진수)'or '2(2진수)' 를 랜덤한 위치에 넣어주는 함수 */
 void addRandom(uint8_t board[SIZE][SIZE]) {
@@ -36,20 +37,6 @@ void addRandom(uint8_t board[SIZE][SIZE]) {
 		n = (rand() % 10) / 9 + 1; // n은 1(2진수),2(2진수) 둘중 하나의 값이고 1(2진수)은 8/9 확률로  2(2진수)는 1/9 확률로 값이 정해진다.
 		board[x][y] = n; //(x,y) 에 n을 저장
 	}
-}
-/*16013076 박재현*/
-/* 게임판을 초기화 시켜주는 함수*/
-void initBoard(uint8_t board[SIZE][SIZE]) {
-	uint8_t x, y;
-	for (x = 0; x < SIZE; x++) {
-		for (y = 0; y < SIZE; y++) {
-			board[x][y] = 0;         // 0을 대입한다는건 빈칸이라는 뜻이다.
-		}
-	}
-	addRandom(board);               // 1(2진수), 2(2진수) 값중 하나를 board에서의 랜덤 위치에 저장
-	addRandom(board);
-	drawBoard(board);               // 게임판을 명령프롬프트 창에 출력
-	score = 0;
 }
 /*16013076 박재현*/
 /* 숫자 타일 및 숫자 자체 색을 정해주는 함수 */
