@@ -15,8 +15,8 @@ uint8_t findTarget(uint8_t array[SIZE], uint8_t x, uint8_t stop) {
 	if (x == 0) {
 		return x;
 	}
-
-	for (t = x - 1;; t--) { // 방향키 입력 방향으로 타겟을 이동시키다가 타겟의 숫자와 타일의 숫자가 같으면 합치기 위함. ex) 2+2 = 4로 만들기 위함입니다.
+	t = x - 1;
+	while(t--) { // 방향키 입력 방향으로 타겟을 이동시키다가 타겟의 숫자와 타일의 숫자가 같으면 합치기 위함. ex) 2+2 = 4로 만들기 위함입니다.
 		if (array[t] != 0) {
 			if (array[t] != array[x]) {
 				//** merge is not possible, take next position
