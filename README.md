@@ -22,7 +22,7 @@ Tested on: GNU/Linux, FreeBSD, OpenBSD
 ### Installation
 
 ```
-wget https://raw.githubusercontent.com/mevdschee/2048.c/master/2048.c
+git clone https://github.com/wogus3602/OpenSource.git
 gcc -o 2048 2048.c
 ./2048
 ```
