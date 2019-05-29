@@ -22,6 +22,7 @@ Description : Console version of the game "2048" for GNU/Linux
 #include<stdint.h>
 #include<time.h>
 #include<signal.h>
+<<<<<<< HEAD
 #include"2048Color.h"
 =======
 #include <stdio.h>
@@ -311,6 +312,15 @@ void signal_callback_handler(int signum) {
 	printf("\033[?25h\033[m");
 	exit(signum); // 프로그램 종료
 }
+=======
+#include"Size.h"
+#include"ScoreAndScheme.h"
+#include"initBoard.h"
+#include"DrawBoard.h"
+#include"Move.h"
+#include"EndGame.h"
+
+>>>>>>> remotes/origin/FileSub_01
 
 int main(int argc, char *argv[]) {
 	uint8_t board[SIZE][SIZE];
