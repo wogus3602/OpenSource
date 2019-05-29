@@ -1,17 +1,18 @@
-/*
+﻿/*
 ============================================================================
 영어로 써져 있는 부분은 원래 작성되어 있던 주석입니다.
 ============================================================================
 */
 /*
- ============================================================================
- Name        : 2048.c
- Author      : Maurits van der Schee
- Description : Console version of the game "2048" for GNU/Linux
- ============================================================================
- */
+============================================================================
+Name        : 2048.c
+Author      : Maurits van der Schee
+Description : Console version of the game "2048" for GNU/Linux
+============================================================================
+*/
 
 #define _XOPEN_SOURCE 500
+<<<<<<< HEAD
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
@@ -22,6 +23,87 @@
 #include<time.h>
 #include<signal.h>
 #include"2048Color.h"
+=======
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include <time.h>
+#include <signal.h>
+
+#define SIZE 4
+uint32_t score = 0; //unsigned는 부호비트를 제거해서 양수 범위를 2배로 늘리기 위해 사용
+uint8_t scheme = 0;
+
+/*16013076 박재현*/
+/* 숫자 타일 및 숫자 자체 색을 정해주는 함수 */
+void getColor(uint8_t value, char *color, size_t length) {
+	// original[],blackwhite[],bluered[] 의 값 순서 {빈타일색깔,·의 색깔,'2'숫자타일색깔,'2'숫자색깔,'4'숫자타일색깔,'4'숫자색깔,....,'16384'숫자타일색깔,'16384'숫자색깔}
+	// 88 또는 256 색상에 대한 ANSI 지원에 따라 달라진다. 지원되는 색상이 충분하지 않으면 blackwhite,bluered 로 바뀔것이다.
+	uint8_t original[] = { 8,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,9,0,10,0,11,0,12,0,13,0,14,0,255,0,255,0 };
+	uint8_t blackwhite[] = { 232,255,234,255,236,255,238,255,240,255,242,255,244,255,246,0,248,0,249,0,250,0,251,0,252,0,253,0,254,0,255,0 };
+	uint8_t bluered[] = { 235,255,63,255,57,255,93,255,129,255,165,255,201,255,200,255,199,255,198,255,197,255,196,255,196,255,196,255,196,255,196,255 };
+
+	uint8_t *schemes[] = { original,blackwhite,bluered };
+	uint8_t *background = schemes[scheme] + 0; // background = 숫자타일색깔
+	uint8_t *foreground = schemes[scheme] + 1; // foreground = 숫자 색깔
+
+									 //value(borad[][]에 저장된 값)
+	if (value > 0) while (value--) {
+		if (background + 2 < schemes[scheme] + sizeof(original)) { //original[]가 총 32개 인데 background가 배열을 초과하면 false 이다.
+			background += 2;
+			foreground += 2;
+		}
+	}
+	snprintf(color, length, "\033[38;5;%d;48;5;%dm", *foreground, *background); // 버퍼에 잠시 값(color)을 저장해둔다.
+}
+
+/*16013076 박재현*/
+/* 명령 프롬프트창에 게임 판을 그려주는 함수*/
+void drawBoard(uint8_t board[SIZE][SIZE]) {
+	uint8_t x, y;
+	char color[40], reset[] = "\033[m"; //reset[] = 모든 속성을 off 시킴 (초기화)
+	printf("\033[H"); //커서를 왼쪽 상단 모서리로 이동
+
+	printf("2048.c %17d pts\n\n", score);
+
+	for (x = 0; x < SIZE; x++) {
+		for (y = 0; y < SIZE; y++) {
+			getColor(board[x][y], color, 40);   // 버퍼안 color의 값을 "\033[38;5;%d;48;5;%dm"로 저장
+			printf("%s", color);            // color를 출력하면 그 다음 타일색이 출력됨
+			printf("       ");
+			printf("%s", reset);            // 색을 초기화 시킴
+		}
+		printf("\n");
+		for (y = 0; y < SIZE; y++) {
+			getColor(board[x][y], color, 40);
+			printf("%s", color);
+			if (board[x][y] != 0) { // board[][]의 값이 0 이면 숫자를 표현할 필요가 없으니깐
+				char s[8];
+				snprintf(s, 8, "%u", (uint32_t)1 << board[x][y]);   //버퍼 안 s에 비트연산 적용된 값(10진수로 생각하면 *2로 생각)이 저장
+				uint8_t t = 7 - strlen(s);                     //한 타일에서 숫자칸을 제외한 숫자 양 옆 공백을 나타내기 위한 변수
+				printf("%*s%s%*s", t - t / 2, "", s, t / 2, ""); //위에서 계산한 t로 앞뒤 공백을 만들고 그 사이에 숫자(변수 s)를 넣는다.
+			}
+			else {
+				printf("   ·  "); // 빈칸을 · 으로 표기
+			}
+			printf("%s", reset);
+		}
+		printf("\n");
+		for (y = 0; y < SIZE; y++) {  //위에서 반복
+			getColor(board[x][y], color, 40);
+			printf("%s", color);
+			printf("       ");
+			printf("%s", reset);
+		}
+		printf("\n");
+	}
+	printf("\n");
+	printf("        ←,↑,→,↓ or q        \n");
+	printf("\033[A"); // one line up
+}
+>>>>>>> 80422de
 
 /*15012971 정민영*/
 /*-----------------------------------------------------------------findTarget-----------------------------------------------------------------*/
@@ -48,6 +130,7 @@ uint8_t findTarget(uint8_t array[SIZE], uint8_t x, uint8_t stop) {
 			// 중복 합침을 방지하기 위해서 합친 위치의 인덱스를 저장해놓고 그 인덱스에 도착할 때 아무것도 안하고 멈추기 위함입니다.
 			if (t == stop) {
 				return t;
+
 			}
 		}
 	}
@@ -87,6 +170,7 @@ bool slideArray(uint8_t array[SIZE]) {
 	}
 	return success;
 }
+
 
 /*-----------------------------------------------------------------rotateBoard-----------------------------------------------------------------*/
 /*4x4 행렬을 시계방향으로 90도 돌려줍니다*/
@@ -165,6 +249,7 @@ bool moveRight(uint8_t board[SIZE][SIZE]) {
 	return success;
 }
 
+
 /*-----------------------------------------------------------------findPairDown-----------------------------------------------------------------*/
 /* findPairDown함수는 가로의 인접한 배열값들이 같은것이 있는지 확인하여
    gameEnded 함수내에서 게임을 끝내는 조건을 확인할때 쓰인다. 16013083 이주형 */
@@ -198,6 +283,7 @@ uint8_t countEmpty(uint8_t board[SIZE][SIZE]) {
 	return count;
 }
 
+
 /*-----------------------------------------------------------------gameEnded-----------------------------------------------------------------*/
 /* gameEnded함수는 게임이 끝나는 조건이 되는지 확인하는 함수이며 그 조건을 확인하기 위해
    board내에 0이 있는지 확인하며 인접한 값들끼리 같은것이 있는지 확인한다.  16013083 이주형 */
@@ -215,41 +301,15 @@ bool gameEnded(uint8_t board[SIZE][SIZE]) {
 }
 
 
-void setBufferedInput(bool enable) {
-	static bool enabled = true;
-	static struct termios old;
-	struct termios new;
-
-	if (enable && !enabled) {
-		// restore the former settings
-		tcsetattr(STDIN_FILENO, TCSANOW, &old);
-		// set the new state
-		enabled = true;
-	}
-	else if (!enable && enabled) {
-		// get the terminal settings for standard input
-		tcgetattr(STDIN_FILENO, &new);
-		// we want to keep the old setting to restore them at the end
-		old = new;
-		// disable canonical mode (buffered i/o) and local echo
-		new.c_lflag &= (~ICANON & ~ECHO);
-		// set the new settings immediately
-		tcsetattr(STDIN_FILENO, TCSANOW, &new);
-		// set the new state
-		enabled = false;
-	}
-}
-
-
 /*15012971 정민영*/
 /*-----------------------------------------------------------------signal_callback_handler-----------------------------------------------------------------*/
 /*리눅스에서 Ctrl + C를 눌렀을 때 종료되는 메세지와 프로그램을 종료하는 작업입니다.*/
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 void signal_callback_handler(int signum) {
 	printf("         TERMINATED         \n");
-	setBufferedInput(true);
+	//setBufferedInput(true);
 	printf("\033[?25h\033[m");
-	exit(signum);
+	exit(signum); // 프로그램 종료
 }
 
 int main(int argc, char *argv[]) {
@@ -267,10 +327,9 @@ int main(int argc, char *argv[]) {
 	printf("\033[?25l\033[2J");
 
 	// register signal handler for when ctrl-c is pressed
-	signal(SIGINT, signal_callback_handler);//SIGINT는 리눅스에서 Ctrl+C를 눌렀을 때 프로세스를 종료시키는 역할을 한다.
+	signal(SIGINT, signal_callback_handler); //SIGINT는 리눅스에서 Ctrl+C를 눌렀을 때 프로세스를 종료시키는 역할을 한다.
 
 	initBoard(board);
-	setBufferedInput(false);
 	while (true) {
 		c = getchar();
 		if (c == -1) { //TODO: maybe replace this -1 with a pre-defined constant(if it's in one of header files)
@@ -278,27 +337,26 @@ int main(int argc, char *argv[]) {
 			break;
 		}
 		switch (c) {
-		case 97:	// 'a' key
-		case 104:	// 'h' key
-		case 68:	// left arrow
-			success = moveLeft(board);  break;
-		case 100:	// 'd' key
-		case 108:	// 'l' key
-		case 67:	// right arrow
-			success = moveRight(board); break;
-		case 119:	// 'w' key
-		case 107:	// 'k' key
-		case 65:	// up arrow
-			success = moveUp(board);    break;
-		case 115:	// 's' key
-		case 106:	// 'j' key
-		case 66:	// down arrow
-			success = moveDown(board);  break;
+		case 97:   // 'a' key
+		case 104:   // 'h' key
+		case 68:   // left arrow
+			success = moveUp(board);  break;
+		case 100:   // 'd' key
+		case 108:   // 'l' key
+		case 67:   // right arrow
+			success = moveDown(board); break;
+		case 119:   // 'w' key
+		case 107:   // 'k' key
+		case 65:   // up arrow
+			success = moveLeft(board);    break;
+		case 115:   // 's' key
+		case 106:   // 'j' key
+		case 66:   // down arrow
+			success = moveRight(board);  break;
 		default: success = false;
 		}
 		if (success) {
 			drawBoard(board);
-			usleep(150000);
 			addRandom(board);
 			drawBoard(board);
 			if (gameEnded(board)) {
@@ -323,7 +381,6 @@ int main(int argc, char *argv[]) {
 			drawBoard(board);
 		}
 	}
-	setBufferedInput(true);
 
 	printf("\033[?25h\033[m");
 
