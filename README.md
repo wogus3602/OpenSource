@@ -1,9 +1,7 @@
 2048.c
 ======
+
 slack 주소 https://opensourcechat-group.slack.com/messages/DK41QTEG6/
-
-
-======
 
 ![screenshot](screenshot.png)
 
