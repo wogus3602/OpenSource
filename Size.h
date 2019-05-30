@@ -6,6 +6,6 @@
 
 #define SIZE 4
 
-uint8_t board[SIZE][SIZE];
+extern uint8_t board[SIZE][SIZE];
 
 #endif

@@ -51,10 +51,12 @@ void getColor(uint8_t value, char *color, size_t length) {
 	uint8_t *foreground = schemes[scheme] + 1; // foreground = 숫자 색깔
 
 	//value(borad[][]에 저장된 값)
-	if (value > 0) while (value--) {
-		if (background + 2 < schemes[scheme] + sizeof(original)) { //original[]가 총 32개 인데 background가 배열을 초과하면 false 이다.
-			background += 2;
-			foreground += 2;
+	if (value > 0) {
+		while (value--) {
+			if (background + 2 < schemes[scheme] + sizeof(original)) { //original[]가 총 32개 인데 background가 배열을 초과하면 false 이다.
+				background += 2;
+				foreground += 2;
+			}
 		}
 	}
 	snprintf(color, length, "\033[38;5;%d;48;5;%dm", *foreground, *background); // 버퍼에 잠시 값(color)을 저장해둔다.
@@ -69,15 +71,15 @@ void drawBoard(uint8_t board[SIZE][SIZE]) {
 
 	printf("2048.c %17d pts\n\n", score);
 
-	for (y = 0; y < SIZE; y++) {
-		for (x = 0; x < SIZE; x++) {
+	for (x = 0; x < SIZE; x++) {
+		for (y = 0; y < SIZE; y++) {
 			getColor(board[x][y], color, 40);   // 버퍼안 color의 값을 "\033[38;5;%d;48;5;%dm"로 저장
 			printf("%s", color);            // color를 출력하면 그 다음 타일색이 출력됨
 			printf("       ");
 			printf("%s", reset);            // 색을 초기화 시킴
 		}
 		printf("\n");
-		for (x = 0; x < SIZE; x++) {
+		for (y = 0; y < SIZE; y++) {
 			getColor(board[x][y], color, 40);
 			printf("%s", color);
 			if (board[x][y] != 0) { // board[][]의 값이 0 이면 숫자를 표현할 필요가 없으니깐
@@ -93,7 +95,7 @@ void drawBoard(uint8_t board[SIZE][SIZE]) {
 			printf("%s", reset);
 		}
 		printf("\n");
-		for (x = 0; x < SIZE; x++) {  //위에서 반복
+		for (y = 0; y < SIZE; y++) {  //위에서 반복
 			getColor(board[x][y], color, 40);
 			printf("%s", color);
 			printf("       ");
