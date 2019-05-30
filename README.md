@@ -3,7 +3,7 @@ README (한국어)
 
 slack 주소 https://opensourcechat-group. slack.com/messages/DK41QTEG6/
 
-![screenshot](screenshot.png)
+![screenshot](pictures/screenshot.png)
 
 GNU/Linux용 게임 콘솔 버전
 
@@ -11,9 +11,9 @@ GNU/Linux용 게임 콘솔 버전
 위쪽, 아래쪽, 왼쪽 및 오른쪽 화살표 키를 사용하여 4 방향으로 타일을 이동할 수 있습니다. 칠판의 모든 숫자는 벽에 부딪힐 때까지 그 방향으로 밀려날 것이고, 서로 맞물리는다면 두 숫자가 같은 값을 가지면 두 숫자가 하나로 합쳐질 것입니다. 각 번호는 이동 당 한 번만 결합됩니다. 매 이동마다 새로운 번호 2 또는 4가 나타납니다. 보드에 2048을 가지고 있다면 이깁니다. 하지만 보드가 꽉 차면 움직일 수 없습니다.
 
 ### FILES
-![screenshot2](screenshot2.png)
-![screenshot3](screenshot3.png)
-![screenshot4](screenshot4.png)
+![screenshot2](pictures/screenshot2.png)
+![screenshot3](pictures/screenshot3.png)
+![screenshot4](pictures/screenshot4.png)
 
 2048 코드의 디렉토리/파일 구조도 및 흐름도이다. 
 흐름도를 통하여 기본적인 시스템을 확인하고 자세한 설명은
@@ -37,6 +37,7 @@ gcc -o 2048 2048.c
 ### FAQ
 
 프로젝트에 기여하고 싶은 개발자는 wogus3602@naver.com로 메일주시길 바랍니다.
+
 slack 주소 https://opensourcechat-group.slack.com/messages/DK41QTEG6/
 
 
