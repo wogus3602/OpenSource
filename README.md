@@ -1,8 +1,5 @@
-2048.c
-
 slack 주소 https://opensourcechat-group.slack.com/messages/DK41QTEG6/
-=======
-======
+
 
 ![screenshot](screenshot.png)
 
@@ -56,12 +53,7 @@ All 13 tests executed successfully
 ----------------------------------------------------------------------------------------
 readme (한국어)
 
-2048.c
-======
 slack 주소 https://opensourcechat-group. slack.com/messages/DK41QTEG6/
-
-
-======
 
 ![screenshot](screenshot.png)
 
