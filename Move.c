@@ -145,19 +145,3 @@ bool moveRight(uint8_t board[SIZE][SIZE]) {
 	rotateBoard(board);
 	return success;
 }
-
-/*-----------------------------------------------------------------findPairDown-----------------------------------------------------------------*/
-/* findPairDown함수는 가로의 인접한 배열값들이 같은것이 있는지 확인하여
-   gameEnded 함수내에서 게임을 끝내는 조건을 확인할때 쓰인다. 16013083 이주형 */
-   /*--------------------------------------------------------------------------------------------------------------------------------------------*/
-bool findPairDown(uint8_t board[SIZE][SIZE]) {
-	bool success = false;
-	uint8_t x, y;
-	for (x = 0; x < SIZE; x++) {
-		for (y = 0; y < SIZE - 1; y++) {
-			if (board[x][y] == board[x][y + 1]) return true;
-		}
-	}
-	return success;
-}
-
