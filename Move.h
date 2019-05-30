@@ -14,8 +14,4 @@ bool moveUp(uint8_t board[SIZE][SIZE]);
 bool moveLeft(uint8_t board[SIZE][SIZE]);
 bool moveDown(uint8_t board[SIZE][SIZE]);
 bool moveRight(uint8_t board[SIZE][SIZE]);
-bool findPairDown(uint8_t board[SIZE][SIZE]);
-
 #endif
-
-
