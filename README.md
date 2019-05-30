@@ -48,7 +48,7 @@ $ ./2048 테스트
 
 ----------------------------------------------------------------------------------------
 
-![screenshot](screenshot.png)
+![screenshot](pictures/screenshot.png)
 
 Console version of the game "2048" for GNU/Linux
 
