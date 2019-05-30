@@ -34,11 +34,14 @@ int main(int argc, char *argv[]) {
 	char c;
 	bool success;
 
-	if (argc == 2 && strcmp(argv[1], "blackwhite") == 0) {
-		scheme = 1;
-	}
-	if (argc == 2 && strcmp(argv[1], "bluered") == 0) {
-		scheme = 2;
+	if (argc == 2) {
+		if(strcmp(argv[1], "blackwhite") == 0) {
+			scheme = 1;
+		}
+
+		if (strcmp(argv[1], "bluered") == 0) {
+			scheme = 2;
+		}
 	}
 
 	printf("\033[?25l\033[2J");
@@ -58,19 +61,19 @@ int main(int argc, char *argv[]) {
 		case 97:	// 'a' key
 		case 104:	// 'h' key
 		case 68:	// left arrow
-			success = moveLeft(board);  break;
+			success = moveUp(board);  break;
 		case 100:	// 'd' key
 		case 108:	// 'l' key
 		case 67:	// right arrow
-			success = moveRight(board); break;
+			success = moveDown(board); break;
 		case 119:	// 'w' key
 		case 107:	// 'k' key
 		case 65:	// up arrow
-			success = moveUp(board);    break;
+			success = moveLeft(board);    break;
 		case 115:	// 's' key
 		case 106:	// 'j' key
 		case 66:	// down arrow
-			success = moveDown(board);  break;
+			success = moveRight(board);  break;
 		default: success = false;
 		}
 		if (success) {
