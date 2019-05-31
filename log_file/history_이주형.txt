@@ -1,105 +1,187 @@
-    1  ls
-    2  mkdir testing
-    3  ls
-    4  cd testing/
-    5  git init
-    6  git clone https://github.com/wogus3602/OpenSource.git
-    7  git remote -v
-    8  git remote add orgin https://github.com/wogus3602/OpenSource.git
-    9  git remote -v
-   10  ls
-   11  cd OpenSource/
-   12  ls
-   13  git branch
-   14  git branch DOCTest_01
-   15  ls
-   16  git pull
-   17  git pull --all
-   18  git branch --all
-   19  git checkout DOCTest_01 
-   20  ls
-   21  git pull remotes/origin/ReadAble_01
-   22  git fetch
-   23  git merge d86e129
-   24  ls
-   25  vi README.md 
-   26  ls
-   27  git branch
-   28  git branch --all
-   29  git checkout remotes/origin/ReadAble_01
-   30  git branch
-   31  ls
-   32  2048.c
-   33  vi 2048.c
-   34  ls
-   35  vi 2048.c
-   36  git pull
-   37  git branch merge_01
-   38  git branch
-   39  git checkout merge_01 
-   40  git merge FileSub_01
-   41  git merge origin/FileSub_01
-   42  git branch
-   43  git pull d83e129
-   44  git merge d83e129
-   45  git commit -a -m "merge version"
-   46  git config --global user.email "dlwngud1230@naver.com"
-   47  git config --global user.name "이주형"
-   48  git commit -a -m "merge version_01"
-   49  git commit -a -m "merge version_01"
-   50  git checkout -
-   51  git branch master
-   52  git checkout master
-   53  git branch
-   54  git status
-   55  git checkout merge_01 
-   56  git status
-   57  git branch --all
-   58  git merge remotes/origin/ReadAble_01
-   59  git merge remotes/origin/ReadAble_01
-   60  git status
-   61  git merge remotes/origin/FileSub_01
-   62  git status
-   63  git merge remotes/origin/ReadAble_01
-   64  git commit -a -m "merge version1"
-   65  git push --all
-   66  git branch
-   67  git checkout DOCTest_01 
-   68  git status
-   69  git pull
-   70  git fetch
-   71  git branch --all
-   72  git branch
-   73  git pull remotes/origin/merge_01
-   74  git branch --all
-   75  git checkout remotes/origin/FileSub_02
-   76  git branch
-   77  git branch testing
-   78  git branch
-   79  git checkout testing
-   80  vi README.md 
-   81  git commit -a -m "test"
-   82  git push origin testing 
-   83  git git branch --all
-   84  git branch --all
-   85  git checkout remotes/origin/FileSub_01
-   86  git status
-   87  git branch merge_02
-   88  git merge d86e129
-   89  git commit -a -m "merge_02"
-   90  git merge d86e129
-   91  git push --all
-   92  git status
-   93  git branch
-   94  git checkout merge_02
-   95  git merge d86e129
-   96  ls
-   97  vi 2048.c
-   98  ls
-   99  ls
-  100  cd testing
-  101  ls
-  102  cd OpenSource/
-  103  git log --all --graph --oneline --decorate > log_이주형.txt
-  104  history
-  105  history > history_이주형.txt
+    1  2019-05-31_13:57:06\ ls
+    2  2019-05-31_13:57:06\ mkdir testing
+    3  2019-05-31_13:57:06\ ls
+    4  2019-05-31_13:57:06\ cd testing/
+    5  2019-05-31_13:57:06\ git init
+    6  2019-05-31_13:57:06\ git clone https://github.com/wogus3602/OpenSource.git
+    7  2019-05-31_13:57:06\ git remote -v
+    8  2019-05-31_13:57:06\ git remote add orgin https://github.com/wogus3602/OpenSource.git
+    9  2019-05-31_13:57:06\ git remote -v
+   10  2019-05-31_13:57:06\ ls
+   11  2019-05-31_13:57:06\ cd OpenSource/
+   12  2019-05-31_13:57:06\ ls
+   13  2019-05-31_13:57:06\ git branch
+   14  2019-05-31_13:57:06\ git branch DOCTest_01
+   15  2019-05-31_13:57:06\ ls
+   16  2019-05-31_13:57:06\ git pull
+   17  2019-05-31_13:57:06\ git pull --all
+   18  2019-05-31_13:57:06\ git branch --all
+   19  2019-05-31_13:57:06\ git checkout DOCTest_01 
+   20  2019-05-31_13:57:06\ ls
+   21  2019-05-31_13:57:06\ git pull remotes/origin/ReadAble_01
+   22  2019-05-31_13:57:06\ git fetch
+   23  2019-05-31_13:57:06\ git merge d86e129
+   24  2019-05-31_13:57:06\ ls
+   25  2019-05-31_13:57:06\ vi README.md 
+   26  2019-05-31_13:57:06\ ls
+   27  2019-05-31_13:57:06\ git branch
+   28  2019-05-31_13:57:06\ git branch --all
+   29  2019-05-31_13:57:06\ git checkout remotes/origin/ReadAble_01
+   30  2019-05-31_13:57:06\ git branch
+   31  2019-05-31_13:57:06\ ls
+   32  2019-05-31_13:57:06\ 2048.c
+   33  2019-05-31_13:57:06\ vi 2048.c
+   34  2019-05-31_13:57:06\ ls
+   35  2019-05-31_13:57:06\ vi 2048.c
+   36  2019-05-31_13:57:06\ git pull
+   37  2019-05-31_13:57:06\ git branch merge_01
+   38  2019-05-31_13:57:06\ git branch
+   39  2019-05-31_13:57:06\ git checkout merge_01 
+   40  2019-05-31_13:57:06\ git merge FileSub_01
+   41  2019-05-31_13:57:06\ git merge origin/FileSub_01
+   42  2019-05-31_13:57:06\ git branch
+   43  2019-05-31_13:57:06\ git pull d83e129
+   44  2019-05-31_13:57:06\ git merge d83e129
+   45  2019-05-31_13:57:06\ git commit -a -m "merge version"
+   46  2019-05-31_13:57:06\ git config --global user.email "dlwngud1230@naver.com"
+   47  2019-05-31_13:57:06\ git config --global user.name "이주형"
+   48  2019-05-31_13:57:06\ git commit -a -m "merge version_01"
+   49  2019-05-31_13:57:06\ git commit -a -m "merge version_01"
+   50  2019-05-31_13:57:06\ git checkout -
+   51  2019-05-31_13:57:06\ git branch master
+   52  2019-05-31_13:57:06\ git checkout master
+   53  2019-05-31_13:57:06\ git branch
+   54  2019-05-31_13:57:06\ git status
+   55  2019-05-31_13:57:06\ git checkout merge_01 
+   56  2019-05-31_13:57:06\ git status
+   57  2019-05-31_13:57:06\ git branch --all
+   58  2019-05-31_13:57:06\ git merge remotes/origin/ReadAble_01
+   59  2019-05-31_13:57:06\ git merge remotes/origin/ReadAble_01
+   60  2019-05-31_13:57:06\ git status
+   61  2019-05-31_13:57:06\ git merge remotes/origin/FileSub_01
+   62  2019-05-31_13:57:06\ git status
+   63  2019-05-31_13:57:06\ git merge remotes/origin/ReadAble_01
+   64  2019-05-31_13:57:06\ git commit -a -m "merge version1"
+   65  2019-05-31_13:57:06\ git push --all
+   66  2019-05-31_13:57:06\ git branch
+   67  2019-05-31_13:57:06\ git checkout DOCTest_01 
+   68  2019-05-31_13:57:06\ git status
+   69  2019-05-31_13:57:06\ git pull
+   70  2019-05-31_13:57:06\ git fetch
+   71  2019-05-31_13:57:06\ git branch --all
+   72  2019-05-31_13:57:06\ git branch
+   73  2019-05-31_13:57:06\ git pull remotes/origin/merge_01
+   74  2019-05-31_13:57:06\ git branch --all
+   75  2019-05-31_13:57:06\ git checkout remotes/origin/FileSub_02
+   76  2019-05-31_13:57:06\ git branch
+   77  2019-05-31_13:57:06\ git branch testing
+   78  2019-05-31_13:57:06\ git branch
+   79  2019-05-31_13:57:06\ git checkout testing
+   80  2019-05-31_13:57:06\ vi README.md 
+   81  2019-05-31_13:57:06\ git commit -a -m "test"
+   82  2019-05-31_13:57:06\ git push origin testing 
+   83  2019-05-31_13:57:06\ git git branch --all
+   84  2019-05-31_13:57:06\ git branch --all
+   85  2019-05-31_13:57:06\ git checkout remotes/origin/FileSub_01
+   86  2019-05-31_13:57:06\ git status
+   87  2019-05-31_13:57:06\ git branch merge_02
+   88  2019-05-31_13:57:06\ git merge d86e129
+   89  2019-05-31_13:57:06\ git commit -a -m "merge_02"
+   90  2019-05-31_13:57:06\ git merge d86e129
+   91  2019-05-31_13:57:06\ git push --all
+   92  2019-05-31_13:57:06\ git status
+   93  2019-05-31_13:57:06\ git branch
+   94  2019-05-31_13:57:06\ git checkout merge_02
+   95  2019-05-31_13:57:06\ git merge d86e129
+   96  2019-05-31_13:57:06\ ls
+   97  2019-05-31_13:57:06\ vi 2048.c
+   98  2019-05-31_13:00:14\ ls
+   99  2019-05-31_13:01:20\ ls
+  100  2019-05-31_13:02:33\ cd testing
+  101  2019-05-31_13:02:35\ ls
+  102  2019-05-31_13:02:40\ cd OpenSource/
+  103  2019-05-31_13:03:11\ git log --all --graph --oneline --decorate > log_이주형.txt
+  104  2019-05-31_13:03:43\ history
+  105  2019-05-31_13:04:01\ history > history_이주형.txt
+  106  2019-05-31_13:04:09\ history_이주형.txt
+  107  2019-05-31_13:05:54\ HISTTIMEFORMAT="%Y-%m-%d_%H:%M:%S\"
+  108  2019-05-31_13:57:06\ export HISTTIMEFORMAT
+  109  2019-05-31_13:57:06\ ;
+  110  2019-05-31_13:57:06\ .
+  111  2019-05-31_13:08:32\ ;
+  112  2019-05-31_13:08:32\ AN
+  113  2019-05-31_13:08:32\ GIT
+  114  2019-05-31_13:08:32\ git
+  115  2019-05-31_13:08:37\ ls
+  116  2019-05-31_13:08:42\ git branch
+  117  2019-05-31_13:08:50\ git pull --all
+  118  2019-05-31_13:09:11\ git push --all
+  119  2019-05-31_13:09:23\ git status
+  120  2019-05-31_13:09:31\ git add --all
+  121  2019-05-31_13:09:49\ git add --all
+  122  2019-05-31_13:09:59\ git commit -a -m "log add"
+  123  2019-05-31_13:10:05\ git push --all
+  124  2019-05-31_13:11:51\ cd
+  125  2019-05-31_13:11:53\ ls
+  126  2019-05-31_13:11:57\ cd testing2
+  127  2019-05-31_13:11:58\ ls
+  128  2019-05-31_13:12:10\ vi a3.txt 
+  129  2019-05-31_13:12:36\ git commit -a -m "abcd"
+  130  2019-05-31_13:12:45\ git branch
+  131  2019-05-31_13:13:07\ git checkout test1
+  132  2019-05-31_13:13:23\ vi a3.txt 
+  133  2019-05-31_13:13:46\ git commit -a -m "avef"
+  134  2019-05-31_13:13:59\ git merge -Xtheirs master
+  135  2019-05-31_13:14:56\ vi a3.txt 
+  136  2019-05-31_13:19:59\ git branch
+  137  2019-05-31_13:20:08\ vi a3.txt
+  138  2019-05-31_13:20:39\ git branch
+  139  2019-05-31_13:20:57\ vi a3.txt
+  140  2019-05-31_13:22:31\ git commit -a -m "abcd'
+  141  2019-05-31_13:57:06\ "
+  142  2019-05-31_13:22:40\ git checkout master
+  143  2019-05-31_13:22:43\ vi a3.txt 
+  144  2019-05-31_13:24:14\ git commit -a -m "abfgek"
+  145  2019-05-31_13:24:22\ git branch
+  146  2019-05-31_13:25:22\ git merge -Xtheirs test1
+  147  2019-05-31_13:27:24\ vi a3.txt 
+  148  2019-05-31_13:27:41\ git branch
+  149  2019-05-31_13:28:14\ vi a3.txt 
+  150  2019-05-31_13:31:46\ ls
+  151  2019-05-31_13:31:58\ git commit -a -m "abfgek"
+  152  2019-05-31_13:32:15\ git checkout test1
+  153  2019-05-31_13:32:18\ git branch
+  154  2019-05-31_13:32:21\ vi a3.txt 
+  155  2019-05-31_13:32:36\ git status
+  156  2019-05-31_13:32:45\ git checkout master
+  157  2019-05-31_13:32:57\ git merge -Xours test1
+  158  2019-05-31_13:33:15\ git commit -a -m "df"
+  159  2019-05-31_13:33:26\ git push --all
+  160  2019-05-31_13:33:40\ git merge -Xours test1
+  161  2019-05-31_13:34:09\ git checkout test1
+  162  2019-05-31_13:34:15\ ls
+  163  2019-05-31_13:34:19\ vi a3.txt 
+  164  2019-05-31_13:34:27\ git status
+  165  2019-05-31_13:34:34\ git checkout master
+  166  2019-05-31_13:34:37\ vi a3.txt 
+  167  2019-05-31_13:35:03\ git checkout test3
+  168  2019-05-31_13:35:04\ ls
+  169  2019-05-31_13:35:08\ vi a3.txt
+  170  2019-05-31_13:35:34\ git commit -a -m "abfd"
+  171  2019-05-31_13:35:52\ git merge -Xtheirs master
+  172  2019-05-31_13:37:09\ vi a3.txt 
+  173  2019-05-31_13:55:58\ cd
+  174  2019-05-31_13:55:58\ ls
+  175  2019-05-31_13:56:12\ HISTTIMEFORMAT="%Y-%m-%d_%H:%M:%S\ "
+  176  2019-05-31_13:56:15\ export HISTTIMEFORMAT 
+  177  2019-05-31_13:57:50\  git log --all --graph --oneline --decorate > log_이주형.txt
+  178  2019-05-31_13:58:10\ history >history_이주형.txt
+  179  2019-05-31_14:02:12\ history
+  180  2019-05-31_14:03:02\ PS1='[\d==\t]\$'
+  181  2019-05-31_14:03:23\ HISTTIMEFORMAT="%Y-%m-%d_%H:%M:%S\ "
+  182  2019-05-31_14:03:24\ export HISTTIMEFORMAT
+  183  2019-05-31_14:03:31\ history
+  184  2019-05-31_14:03:54\ ls
+  185  2019-05-31_14:05:36\ git log --all --graph --oneline --decorate > log_이주형.txt
+  186  2019-05-31_14:06:11\ git log --all --graph --oneline --decorate > log_이주형.txt
+  187  2019-05-31_14:07:00\ history >history_이름.txt
