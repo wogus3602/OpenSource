@@ -1,5 +1,6 @@
 #ifndef _MOVE_H
-
+/*포함 되어있는 함수: findTarget, slideArray, rotateBoard, moveUp, moveLeft, moveDown, moveRight*/
+/*방향키 조작을 위한 헤더 파일이다.*/
 #define _MOVE_H
 
 #include <stdbool.h>
