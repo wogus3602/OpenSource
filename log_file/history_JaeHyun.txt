@@ -1,0 +1,500 @@
+   22  2019-05-30_00:10:48\ git checkout 199317c
+   23  2019-05-30_00:11:02\ git branch -D newmaster 
+   24  2019-05-30_00:11:11\ git checkout -b newmaster
+   25  2019-05-30_00:11:22\ git push origin newmaster
+   26  2019-05-30_00:11:44\ git pull
+   27  2019-05-30_00:11:48\ git push origin newmaster
+   28  2019-05-30_00:12:05\ git branch
+   29  2019-05-30_00:12:10\ git status
+   30  2019-05-30_00:13:09\ git branch --all
+   31  2019-05-30_00:13:25\ git branch -D remotes/origin/newmaster
+   32  2019-05-30_00:15:03\ git branch -m newmaster newmaster_01
+   33  2019-05-30_00:15:10\ git push origin newmaster_01 
+   34  2019-05-30_00:16:55\ git checkout bec01c5
+   35  2019-05-30_00:16:58\ ls
+   36  2019-05-30_00:17:10\ git checkout -b newmaster_02
+   37  2019-05-30_00:17:28\ git checkout master
+   38  2019-05-30_00:17:39\ git pull origin newmaster_02
+   39  2019-05-30_00:17:55\ git checkout newmaster_0
+   40  2019-05-30_00:17:56\ git checkout newmaster_02
+   41  2019-05-30_00:18:05\ git push origin newmaster_02
+   42  2019-05-30_00:19:09\ vi README.md 
+   43  2019-05-30_00:19:43\ git commit -a -m "readmefile"
+   44  2019-05-30_00:19:49\ git push origin newmaster_02
+   45  2019-05-30_00:21:26\ git checkout master 
+   46  2019-05-30_00:21:36\ git pull origin newmaster_02
+   47  2019-05-30_00:21:42\ vi README.md 
+   48  2019-05-30_00:22:23\ git commit -a -m "master"
+   49  2019-05-30_00:22:29\ git push origin master
+   50  2019-05-30_00:23:22\ git pull
+   51  2019-05-30_00:24:09\ git pull origin newmaster_02
+   52  2019-05-30_00:24:40\ git log --graph
+   53  2019-05-30_00:25:22\ git merge FETCH_HEAD 
+   54  2019-05-30_00:25:31\ git push origin master
+   55  2019-05-30_00:26:38\ git checkout bec01c5
+   56  2019-05-30_00:26:54\ git checkout -b newmaster_03
+   57  2019-05-30_00:27:03\ git checkout
+   58  2019-05-30_00:27:07\ git checkout master
+   59  2019-05-30_00:27:18\ git merge origin newmaster_03
+   60  2019-05-30_00:27:55\ git push --all
+   61  2019-05-30_00:28:43\ git pull
+   62  2019-05-30_00:28:58\ git merge origin newmaster_03
+   63  2019-05-30_00:29:05\ vi README.md 
+   64  2019-05-30_00:29:21\ git commit -a -m "master"
+   65  2019-05-30_00:29:36\ git checkout newmaster_03
+   66  2019-05-30_00:29:40\ vi README.md 
+   67  2019-05-30_00:29:55\ git commit -a -m "master"
+   68  2019-05-30_00:30:04\ git push --all
+   69  2019-05-30_00:30:21\ git checkout master
+   70  2019-05-30_00:30:35\ git pull origin newmaster_03
+   71  2019-05-30_00:30:42\ vi README.md 
+   72  2019-05-30_00:31:00\ git commit -a -m "master"
+   73  2019-05-30_00:31:09\ git push origin master
+   74  2019-05-30_00:33:01\ git checkout newmaster_03
+   75  2019-05-30_00:33:03\ vi README.md 
+   76  2019-05-30_00:33:19\ git commit -a -m "master"
+   77  2019-05-30_00:33:25\ git push origin newmaster_03
+   78  2019-05-30_00:36:18\ git checkout master
+   79  2019-05-30_00:36:37\ git commit -a -m "master"
+   80  2019-05-30_00:36:46\ git checkout master
+   81  2019-05-30_00:37:00\ git status
+   82  2019-05-30_00:37:11\ git add --all
+   83  2019-05-30_00:37:15\ git status
+   84  2019-05-30_00:37:26\ git checkout master
+   85  2019-05-30_00:38:18\ git status
+   86  2019-05-30_00:38:23\ git add 2048.c
+   87  2019-05-30_00:38:40\ git status
+   88  2019-05-30_00:38:45\ git add README.md 
+   89  2019-05-30_00:38:49\ git commit -m "master
+   90  2019-05-31_12:07:49\ "
+   91  2019-05-30_00:39:03\ git push origin master
+   92  2019-05-30_00:40:02\ git pull
+   93  2019-05-30_00:40:23\ git checkout newmaster_03
+   94  2019-05-30_00:40:25\ ls
+   95  2019-05-30_00:41:01\ git pull origin master
+   96  2019-05-30_00:41:13\ git checkout master
+   97  2019-05-30_00:42:19\ git branch -D newmaster_03
+   98  2019-05-30_00:42:25\ git pull
+   99  2019-05-30_00:42:53\ git checkout remotes/origin/newmaster_03
+  100  2019-05-30_00:43:02\ git rebase master
+  101  2019-05-30_00:43:22\ git branch newmaster_03
+  102  2019-05-30_00:43:28\ git checkout newmaster_03
+  103  2019-05-30_00:44:08\ git rebase master
+  104  2019-05-30_00:44:18\ git checkout master
+  105  2019-05-30_00:44:27\ git merge newmaster_03
+  106  2019-05-30_00:44:32\ git merge origin newmaster_03
+  107  2019-05-30_00:44:38\ git push --all
+  108  2019-05-30_00:45:20\ git pull
+  109  2019-05-30_00:45:53\ ls
+  110  2019-05-30_00:46:00\ git checkout newmaster_03
+  111  2019-05-30_00:46:01\ ls
+  112  2019-05-30_00:46:10\ git checkout newmaster_02
+  113  2019-05-30_00:46:12\ ls
+  114  2019-05-30_00:46:19\ git rebase master
+  115  2019-05-30_00:46:26\ git checkout
+  116  2019-05-30_00:46:30\ git checkout master
+  117  2019-05-30_00:46:37\ git merge newmaster_02
+  118  2019-05-30_00:47:59\ git newmaster_02
+  119  2019-05-30_00:48:04\ git checkout newmaster_02
+  120  2019-05-30_00:48:16\ git checkout -b newmaster_03
+  121  2019-05-30_00:48:18\ git checkout -b newmaster_04
+  122  2019-05-30_00:48:20\ ls
+  123  2019-05-30_00:48:32\ git checkout newmaster_02
+  124  2019-05-30_00:48:33\ ls
+  125  2019-05-30_00:48:39\ git checkout newmaster_01
+  126  2019-05-30_00:48:41\ l
+  127  2019-05-30_00:48:46\ git checkout newmaster
+  128  2019-05-30_00:48:48\ ls
+  129  2019-05-30_00:49:06\ git branch -D newmaster_01 newmaster_02 newmaster_03
+  130  2019-05-30_00:49:15\ git branch -D newmaster_04
+  131  2019-05-30_00:49:29\ git push --all
+  132  2019-05-30_00:49:41\ git branch --all
+  133  2019-05-30_00:50:48\ git push origin :newmaster_01
+  134  2019-05-30_00:50:57\ git push origin :newmaster_02
+  135  2019-05-30_00:51:07\ git push origin :newmaster_03
+  136  2019-05-30_00:51:25\ git checkout -b newmaster_01
+  137  2019-05-30_00:51:27\ ls
+  138  2019-05-30_00:51:31\ git branch --all
+  139  2019-05-30_00:51:41\ git rebaser master
+  140  2019-05-30_00:51:46\ git rebase master
+  141  2019-05-30_00:52:36\ git push --all
+  142  2019-05-30_00:52:59\ git checkout master
+  143  2019-05-30_00:53:09\ git merge origin newmaster_01
+  144  2019-05-30_00:53:34\ git push origin :newmaster_01
+  145  2019-05-30_00:54:01\ git checkout newmaster_01
+  146  2019-05-30_00:54:06\ git branch --all
+  147  2019-05-30_00:54:14\ git rebase master
+  148  2019-05-30_00:54:23\ git checkout master
+  149  2019-05-30_00:54:32\ git merge origin newmaster_01
+  150  2019-05-30_00:56:03\ git log --graph
+  151  2019-05-30_00:56:31\ ls
+  152  2019-05-30_00:56:41\ git merge newmaster_01
+  153  2019-05-30_00:57:31\ ls
+  154  2019-05-30_00:57:39\ git checkout newmaster_01
+  155  2019-05-30_00:57:45\ git push origin newmaster_01
+  156  2019-05-30_00:58:30\ vi README.md 
+  157  2019-05-30_00:58:43\ git commit -a -m "master"
+  158  2019-05-30_00:58:52\ git push origin newmaster_01
+  159  2019-05-30_00:59:26\ ls
+  160  2019-05-30_00:59:40\ git checkout newmaster
+  161  2019-05-30_00:59:40\ ls
+  162  2019-05-30_00:59:52\ git checkout -b newmaster_02
+  163  2019-05-30_00:59:57\ ls
+  164  2019-05-30_01:00:02\ git rebase master
+  165  2019-05-30_01:00:04\ ls
+  166  2019-05-30_01:00:16\ git checkout newmaster
+  167  2019-05-30_01:00:17\ ls
+  168  2019-05-30_01:00:32\ git branch -D newmaster_02
+  169  2019-05-30_01:00:39\ git checkout -b newmaster_02
+  170  2019-05-30_01:00:43\ git master
+  171  2019-05-30_01:00:46\ git checkout master
+  172  2019-05-30_01:00:55\ git rebase newmaster_02
+  173  2019-05-30_01:01:07\ ls
+  174  2019-05-30_01:01:12\ vi README.md 
+  175  2019-05-30_01:02:05\ git rebase --continue
+  176  2019-05-30_01:02:17\ git add README.md 
+  177  2019-05-30_01:02:27\ git commit -m "README"
+  178  2019-05-30_01:02:30\ git rebase --continue
+  179  2019-05-30_01:02:36\ git status
+  180  2019-05-30_01:02:41\ ls
+  181  2019-05-30_01:02:47\ vi 2048.c
+  182  2019-05-30_01:03:22\ git rebase --skip
+  183  2019-05-30_01:03:33\ vi 2048.c
+  184  2019-05-30_01:04:44\ vi 2048.c
+  185  2019-05-30_01:05:53\ git add 2048.c
+  186  2019-05-30_01:06:02\ git status
+  187  2019-05-30_01:06:05\ git vi 2048.c
+  188  2019-05-30_01:06:09\ vi 2048.c
+  189  2019-05-30_01:06:27\ git commit -m "2048.c"
+  190  2019-05-30_01:06:36\ git rebase --continue
+  191  2019-05-30_01:06:46\ git rebase --skip
+  192  2019-05-30_01:07:03\ vi README.md 
+  193  2019-05-30_01:07:28\ git commit -a -m "readme"
+  194  2019-05-30_01:07:38\ git rebase --skip
+  195  2019-05-30_01:08:26\ git stauts
+  196  2019-05-30_01:08:34\ git status
+  197  2019-05-30_01:08:46\ git rebase --skip
+  198  2019-05-30_01:08:49\ ls
+  199  2019-05-30_01:09:06\ git push origin master
+  200  2019-05-30_01:09:24\ git pull
+  201  2019-05-30_01:09:38\ git commit -a -m "readme"
+  202  2019-05-30_01:09:45\ git push origin master 
+  203  2019-05-30_01:21:44\ history
+  204  2019-05-30_01:22:32\ HISTTIMEFORMAT="%Y-%m-%d_%H:%M:%S\ "
+  205  2019-05-30_01:22:35\ export HISTTIMEFORMAT
+  206  2019-05-30_01:22:39\ history
+  207  2019-05-30_01:44:16\ ls
+  208  2019-05-30_01:44:17\ cd ..
+  209  2019-05-30_01:44:18\ ls
+  210  2019-05-30_01:44:23\ cd OpenSource
+  211  2019-05-30_01:44:25\ cd ..
+  212  2019-05-30_01:44:32\ cd OpenProject/
+  213  2019-05-30_01:44:33\ ls
+  214  2019-05-30_01:44:42\ git checkout master
+  215  2019-05-30_01:44:55\ git log --graph
+  216  2019-05-30_01:45:55\ ls
+  217  2019-05-30_01:45:59\ vi README.md 
+  218  2019-05-30_01:46:20\ git commit -a -m "start"
+  219  2019-05-30_01:46:27\ git push origin master
+  220  2019-05-30_01:46:38\ git pull
+  221  2019-05-30_01:46:44\ ls
+  222  2019-05-30_01:46:58\ git rm a1.txt a2.txt a3.txt 
+  223  2019-05-30_01:47:00\ ls
+  224  2019-05-30_01:47:12\ git commit -a -m "start"
+  225  2019-05-30_01:47:18\ git rm a1.txt a2.txt a3.txt 
+  226  2019-05-30_01:47:22\ vi README.md 
+  227  2019-05-30_01:47:46\ git push oirigin master
+  228  2019-05-30_01:47:51\ git push origin master
+  229  2019-05-30_01:48:00\ ls
+  230  2019-05-30_01:50:15\ git log --graph
+  231  2019-05-30_01:52:36\ git branch
+  232  2019-05-30_01:58:18\ git grach --all
+  233  2019-05-30_01:58:21\ git pull
+  234  2019-05-30_01:58:35\ git graph --all
+  235  2019-05-30_01:58:46\ git branch --all
+  236  2019-05-30_02:01:26\ git checkout remotes/origin/topic1
+  237  2019-05-30_02:01:49\ git status
+  238  2019-05-30_02:01:56\ git commit -a -m "1"
+  239  2019-05-30_02:02:00\ git checkout remotes/origin/topic1
+  240  2019-05-30_02:02:36\ git pull origin topic2
+  241  2019-05-30_02:03:14\ git commit -a -m "merge_01"
+  242  2019-05-30_02:03:55\ git push origin 72aaeac
+  243  2019-05-30_02:09:49\ git branch
+  244  2019-05-30_02:10:27\ git push --all
+  245  2019-05-30_02:16:30\ git checkout -b newtopic1
+  246  2019-05-30_02:18:09\ git log --graph
+  247  2019-05-30_02:32:33\ git master
+  248  2019-05-30_02:32:39\ git checkout master 
+  249  2019-05-30_02:33:11\ git push --all
+  250  2019-05-30_02:34:39\ git rebase topic1
+  251  2019-05-30_02:34:51\ git rebase Test1
+  252  2019-05-30_02:35:33\ git rebase --skip
+  253  2019-05-30_02:35:37\ git rebase --skip
+  254  2019-05-30_02:35:39\ git rebase --skip
+  255  2019-05-30_02:35:41\ git rebase --skip
+  256  2019-05-30_02:35:42\ git rebase --skip
+  257  2019-05-30_02:35:43\ git rebase --skip
+  258  2019-05-30_02:35:44\ git rebase --skip
+  259  2019-05-30_02:35:46\ git rebase --skip
+  260  2019-05-30_02:35:47\ git rebase --skip
+  261  2019-05-30_02:35:54\ git log --graph
+  262  2019-05-30_02:36:02\ git push origin master
+  263  2019-05-30_02:36:16\ git pull
+  264  2019-05-30_02:36:20\ git push origin master
+  265  2019-05-30_02:36:31\ git pull
+  266  2019-05-30_02:36:37\ git push --all
+  267  2019-05-30_02:36:49\ git commit -a -m "test1"
+  268  2019-05-30_02:36:54\ git push origin master
+  269  2019-05-30_02:40:33\ git checkout -b rebase_01
+  270  2019-05-30_02:40:43\ git checkout -
+  271  2019-05-30_02:40:46\ git checkout -b rebase_02
+  272  2019-05-30_02:40:50\ git checkout -
+  273  2019-05-30_02:40:56\ git checkout rebase_01
+  274  2019-05-30_02:40:59\ vi README.md 
+  275  2019-05-30_02:41:12\ git checkout rebase_02
+  276  2019-05-30_02:41:23\ vi README.md 
+  277  2019-05-30_02:41:45\ git log --graph
+  278  2019-05-30_02:42:02\ git commit -a -m "rebase_02"
+  279  2019-05-30_02:42:06\ git log --graph
+  280  2019-05-30_02:42:13\ git checkout rebase_01
+  281  2019-05-30_02:42:19\ git status
+  282  2019-05-30_02:42:31\ vi README.md 
+  283  2019-05-30_02:42:47\ git commit -a -m "rebase_01"
+  284  2019-05-30_02:42:55\ git log --graph
+  285  2019-05-30_02:43:10\ git push --all
+  286  2019-05-30_02:46:10\ git checkout rebase_01
+  287  2019-05-30_02:46:14\ git checkout rebase_02
+  288  2019-05-30_02:47:03\ git rebase rebase_01
+  289  2019-05-30_02:47:16\ git log --graph
+  290  2019-05-30_02:49:09\ git stuats
+  291  2019-05-30_02:49:14\ git status
+  292  2019-05-30_02:49:27\ git push --all
+  293  2019-05-30_02:49:48\ git checkout rebase_01
+  294  2019-05-30_02:49:57\ git merge rebaser_02
+  295  2019-05-30_02:50:03\ git merge origin rebaser_02
+  296  2019-05-30_02:50:11\ git log --graph
+  297  2019-05-30_02:50:25\ git push --all
+  298  2019-05-30_02:51:30\ git pull
+  299  2019-05-30_02:51:38\ git push --all
+  300  2019-05-30_02:52:09\ git rm rebase_02
+  301  2019-05-30_02:52:20\ git push origin :rebase_02
+  302  2019-05-30_02:52:39\ git push --all
+  303  2019-05-30_02:54:08\ git pull
+  304  2019-05-30_02:54:19\ git checkout master
+  305  2019-05-30_02:54:22\ git pull
+  306  2019-05-30_02:54:30\ git branch --all
+  307  2019-05-30_02:54:55\ git push origin :rebaser_01
+  308  2019-05-30_02:55:17\ git push origin :rebaser_02
+  309  2019-05-30_02:55:24\ git push origin :rebase_02
+  310  2019-05-30_02:55:35\ git push --all
+  311  2019-05-30_02:56:05\ git push origin :rebase_02
+  312  2019-05-30_02:56:26\ git rm rebase_02
+  313  2019-05-30_02:56:32\ ls
+  314  2019-05-30_02:56:36\ git branch
+  315  2019-05-30_02:56:43\ git branch -D rebase_02
+  316  2019-05-30_02:56:47\ git push --all
+  317  2019-05-30_02:58:32\ git checkout rebase_01 
+  318  2019-05-30_02:58:42\ git rebase master
+  319  2019-05-30_03:39:36\ ls
+  320  2019-05-30_03:39:40\ cd ..
+  321  2019-05-30_03:39:40\ ls
+  322  2019-05-30_03:39:48\ cd OpenSource/
+  323  2019-05-30_03:39:49\ ls
+  324  2019-05-30_03:39:56\ git pull
+  325  2019-05-30_03:40:13\ git status
+  326  2019-05-30_03:40:27\ git branch
+  327  2019-05-30_03:40:34\ git checkout ReadAble_01 
+  328  2019-05-30_03:40:44\ git pull
+  329  2019-05-30_03:41:04\ git stash
+  330  2019-05-30_03:41:12\ git checkout ReadAble_01 
+  331  2019-05-30_03:41:21\ git status
+  332  2019-05-30_03:41:32\ git checkout master 
+  333  2019-05-30_03:41:36\ git status
+  334  2019-05-30_03:42:38\ git stash list
+  335  2019-05-30_03:42:45\ git stash apply 
+  336  2019-05-30_03:43:45\ git checkout ReadAble_01 
+  337  2019-05-30_03:43:50\ git stash
+  338  2019-05-30_03:43:57\ git checkout ReadAble_01 
+  339  2019-05-30_03:44:03\ git stash list
+  340  2019-05-30_03:44:12\ git stash apply 
+  341  2019-05-30_03:44:18\ git status
+  342  2019-05-30_03:44:39\ vi 2048.c
+  343  2019-05-30_03:44:59\ ls
+  344  2019-05-30_03:45:13\ git checkout master
+  345  2019-05-30_03:45:19\ git pull
+  346  2019-05-30_03:45:25\ git checkout master
+  347  2019-05-30_03:45:57\ git stash list
+  348  2019-05-30_03:46:06\ git checkout master
+  349  2019-05-30_03:46:18\ git add 2048.c 
+  350  2019-05-30_03:46:27\ git add Move.c 
+  351  2019-05-30_03:46:33\ git status
+  352  2019-05-30_03:46:45\ git checkout master
+  353  2019-05-30_03:46:55\ git stash
+  354  2019-05-30_03:46:58\ git checkout master
+  355  2019-05-30_03:47:04\ git stash list
+  356  2019-05-30_03:47:18\ git stash drop stash@{0}
+  357  2019-05-30_03:47:20\ git stash drop stash@{1}
+  358  2019-05-30_03:47:23\ git stash drop stash@{2}
+  359  2019-05-30_03:47:26\ git stash drop stash@{0}
+  360  2019-05-30_03:47:31\ git stash list
+  361  2019-05-30_03:47:34\ git status
+  362  2019-05-30_03:47:39\ git pull
+  363  2019-05-30_03:47:52\ ls
+  364  2019-05-30_03:47:56\ vi 2048.c
+  365  2019-05-30_03:48:18\ git checkout -b ReadAble_02
+  366  2019-05-30_03:48:22\ ls
+  367  2019-05-30_03:55:14\ vi 2048.c
+  368  2019-05-30_03:57:03\ vi 2048.c
+  369  2019-05-30_03:58:38\ vi DrawBoard.c
+  370  2019-05-30_04:03:06\ vi EndGame.c
+  371  2019-05-30_04:03:40\ vi Move.c
+  372  2019-05-30_04:05:52\ git commit -a -m "edit"
+  373  2019-05-30_04:06:00\ git push origin ReadAble_0
+  374  2019-05-30_04:06:03\ git push origin ReadAble_02
+  375  2019-05-30_04:06:36\ ls
+  376  2019-05-30_04:06:51\ 2048
+  377  2019-05-30_04:07:03\ ./2048
+  378  2019-05-30_04:07:17\ gcc -o 2048 2048.c
+  379  2019-05-30_14:59:34\ ls
+  380  2019-05-30_14:59:36\ git status
+  381  2019-05-30_14:59:45\ git branch --all
+  382  2019-05-30_15:00:34\ git rm newmaster
+  383  2019-05-30_15:01:02\ git branc -D newmaster
+  384  2019-05-30_15:01:07\ git branch -D newmaster
+  385  2019-05-30_15:01:41\ git branch -D newmaster_01 newmaster_02
+  386  2019-05-30_15:01:45\ git bracnh --all
+  387  2019-05-30_15:01:51\ git branch --all
+  388  2019-05-30_15:02:10\ git status
+  389  2019-05-30_15:02:29\ vi 2048.c
+  390  2019-05-30_15:03:47\ git status
+  391  2019-05-30_15:05:33\ git checkout master 
+  392  2019-05-30_15:13:43\ git stash
+  393  2019-05-30_15:13:47\ git status
+  394  2019-05-30_15:13:54\ git checkout master 
+  395  2019-05-30_15:16:10\ git stash list
+  396  2019-05-30_15:22:18\ git stash apply stash{0}
+  397  2019-05-30_15:22:33\ git stash apply --i
+  398  2019-05-30_15:23:27\ git stash apply stash@{0}
+  399  2019-05-30_15:23:41\ git status
+  400  2019-05-30_15:24:12\ git stash
+  401  2019-05-30_15:24:19\ git status
+  402  2019-05-30_15:24:28\ git reset HEAD 2048.c
+  403  2019-05-30_15:24:33\ git status
+  404  2019-05-30_15:24:44\ ls 2048.c
+  405  2019-05-30_15:24:48\ vi 2048.c
+  406  2019-05-30_15:26:43\ git status
+  407  2019-05-30_15:26:54\ git checkout ReadAble_0
+  408  2019-05-30_15:26:56\ git checkout ReadAble_01
+  409  2019-05-30_15:27:02\ git checkout ReadAble_02
+  410  2019-05-30_15:27:06\ git status
+  411  2019-05-30_15:27:10\ git stash list
+  412  2019-05-30_15:27:25\ git stash apply stash@{0}
+  413  2019-05-30_15:27:50\ vi 2048.c
+  414  2019-05-30_15:28:16\ git add 2048.c
+  415  2019-05-30_15:28:24\ git commit -m "Edit"
+  416  2019-05-30_15:28:29\ git status
+  417  2019-05-30_15:42:21\ git merge -f --help
+  418  2019-05-30_15:45:45\ git merge --help
+  419  2019-05-30_20:33:44\ git merge --help
+  420  2019-05-30_22:11:57\ git merge --help
+  421  2019-05-30_22:42:56\ git pull
+  422  2019-05-30_22:49:36\ git checkout master
+  423  2019-05-30_22:49:38\ ls
+  424  2019-05-30_23:03:33\ git log --all --oneline --decorate >> file.txt
+  425  2019-05-30_23:04:15\ git log --all --graph --oneline --decorate >> file.txt
+  426  2019-05-30_23:04:25\ vi file.txt
+  427  2019-05-30_23:18:35\ ls
+  428  2019-05-30_23:18:41\ cd log_file/
+  429  2019-05-30_23:18:42\ ls
+  430  2019-05-30_23:18:49\ rm -r log_jaehyun.txt 
+  431  2019-05-30_23:18:51\ ls
+  432  2019-05-30_23:18:52\ cd ..
+  433  2019-05-30_23:18:52\ ls
+  434  2019-05-30_23:19:13\ git log --all --graph --oneline --decorate >> log_jaehyun.txt
+  435  2019-05-30_23:20:00\ ls
+  436  2019-05-30_23:20:08\ rm -r file.txt 
+  437  2019-05-30_23:20:09\ ls
+  438  2019-05-30_23:20:16\ git status
+  439  2019-05-30_23:20:24\ git commit -a -m "logfile"
+  440  2019-05-30_23:20:34\ git push origin master
+  441  2019-05-30_23:20:46\ git pull
+  442  2019-05-30_23:21:06\ ls
+  443  2019-05-30_23:21:58\ git push origin master
+  444  2019-05-30_23:22:53\ ls
+  445  2019-05-30_23:22:54\ ls -a
+  446  2019-05-30_23:23:03\ cd ..
+  447  2019-05-30_23:23:06\ cd etc/
+  448  2019-05-30_23:23:10\ cd var/
+  449  2019-05-30_23:23:14\ cd ..
+  450  2019-05-30_23:23:15\ ls
+  451  2019-05-30_23:23:17\ cd etc
+  452  2019-05-30_23:23:21\ cd var
+  453  2019-05-30_23:23:28\ cd
+  454  2019-05-30_23:23:29\ ls
+  455  2019-05-30_23:23:31\ cd /var
+  456  2019-05-30_23:23:34\ cd /etc
+  457  2019-05-30_23:23:36\ ls -a
+  458  2019-05-30_23:23:53\ vi bash.bash_logout 
+  459  2019-05-30_23:24:12\ ls profile.d/
+  460  2019-05-30_23:24:14\ ls
+  461  2019-05-30_23:24:32\ history
+  462  2019-05-30_23:24:50\ history --all
+  463  2019-05-30_23:26:39\ PS1='[\d==\t]\$'
+  464  2019-05-30_23:26:41\ ls
+  465  2019-05-30_23:26:52\ cd ..
+  466  2019-05-30_23:26:52\ ls
+  467  2019-05-30_23:27:02\ ls -a
+  468  2019-05-30_23:27:11\ cd etc
+  469  2019-05-30_23:27:12\ ls
+  470  2019-05-30_23:27:22\ cd
+  471  2019-05-30_23:27:23\ ls
+  472  2019-05-30_23:27:26\ ls -a
+  473  2019-05-30_23:27:33\ cd .bash_history 
+  474  2019-05-30_23:27:38\ vi .bash_history 
+  475  2019-05-30_23:27:58\ ls
+  476  2019-05-30_23:28:02\ cd Desktop/
+  477  2019-05-30_23:28:03\ ls
+  478  2019-05-30_23:28:05\ cd Test
+  479  2019-05-30_23:28:05\ ls
+  480  2019-05-30_23:28:13\ history >file.txt
+  481  2019-05-30_23:28:23\ vi file.txt 
+  482  2019-05-30_23:30:30\ ls
+  483  2019-05-30_23:30:32\ cd ..
+  484  2019-05-30_23:30:32\ ls
+  485  2019-05-30_23:30:34\ ls -a
+  486  2019-05-30_23:30:37\ cd ..
+  487  2019-05-30_23:30:39\ ls -a
+  488  2019-05-31_00:37:01\ vi .bash_history 
+  489  2019-05-31_00:37:07\ exit
+  490  2019-05-31_12:07:49\ vi .bash_history 
+  491  2019-05-31_12:07:49\ ls
+  492  2019-05-31_12:07:49\ cd ..
+  493  2019-05-31_12:07:49\ ls
+  494  2019-05-31_12:07:49\ cd ..
+  495  2019-05-31_12:07:49\ ls
+  496  2019-05-31_12:07:49\ cd
+  497  2019-05-31_12:07:49\ ls
+  498  2019-05-31_12:07:49\ ls -a
+  499  2019-05-31_12:07:49\ .bash_history > bash_history_JaeHyun.txt
+  500  2019-05-31_12:07:49\ vi .bash_history > bash_history_JaeHyun.txt
+  501  2019-05-31_12:07:51\ ls
+  502  2019-05-31_12:07:58\ cd Desktop/Test/OpenSource/
+  503  2019-05-31_12:07:59\ ls
+  504  2019-05-31_12:08:28\ echo dd > .gitignore
+  505  2019-05-31_12:08:30\ ls
+  506  2019-05-31_12:08:43\ vi .gitignore 
+  507  2019-05-31_12:09:23\ ls
+  508  2019-05-31_12:09:34\ git push origin master
+  509  2019-05-31_12:09:42\ git status
+  510  2019-05-31_12:09:48\ git add .gitignore 
+  511  2019-05-31_12:10:02\ git commit -m "gitignore"
+  512  2019-05-31_12:10:05\ git push origin master
+  513  2019-05-31_12:15:03\ ls
+  514  2019-05-31_12:15:16\ history
+  515  2019-05-31_12:15:28\ PS1='[\d==\t]\$'
+  516  2019-05-31_12:15:30\ history
+  517  2019-05-31_12:17:10\ HISTTIMEFORMAT="%Y-%m-%d_%H:%M:%S\ "
+  518  2019-05-31_12:17:34\ HISTTIMEFORMAT="%Y-%m-%d_%H:%M:%S\ "
+  519  2019-05-31_12:17:36\ export HISTTIMEFORMAT
+  520  2019-05-31_12:17:40\ history
+  521  2019-05-31_12:18:27\ history > history_JaeHyun.txt
