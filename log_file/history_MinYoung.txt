@@ -1,0 +1,83 @@
+    1  2019-05-31_13:10:42\ git log --all --graph --oneline --decorate > MinYoung.txt
+    2  2019-05-31_13:10:47\ history
+    3  2019-05-31_13:10:50\ ls
+    4  2019-05-31_13:10:54\ cd OpenSource
+    5  2019-05-31_13:11:00\ history
+    6  2019-05-31_13:11:05\ git log
+    7  2019-05-31_13:12:55\ git log --all --graph --oneline --decorate > MinYoung.txt
+    8  2019-05-31_13:12:56\ ls
+    9  2019-05-31_13:13:05\ vi MinYoung
+   10  2019-05-31_13:13:13\ vi MinYoung.txt
+   11  2019-05-31_13:14:33\ PS1='[\d==\t]\$'
+   12  2019-05-31_13:14:36\ git pull
+   13  2019-05-31_13:14:41\ ls
+   14  2019-05-31_13:14:57\ vi EndGame.h
+   15  2019-05-31_13:15:16\ vi Move.c
+   16  2019-05-31_13:15:27\ ls
+   17  2019-05-31_13:15:31\ git branch
+   18  2019-05-31_13:16:37\ git branch -all
+   19  2019-05-31_13:16:40\ git branch -A
+   20  2019-05-31_13:16:48\ git branch -a
+   21  2019-05-31_13:17:35\ git pull origin remotes/origin/FileSub_04
+   22  2019-05-31_13:17:44\ git pull origin FileSub_04
+   23  2019-05-31_13:18:09\ git pull remotes/origin/FileSub_04
+   24  2019-05-31_13:18:41\ git pull origin
+   25  2019-05-31_13:19:31\ lls
+   26  2019-05-31_13:19:34\ ls
+   27  2019-05-31_13:19:44\ rm -rf MinYoung.txt
+   28  2019-05-31_13:19:49\ ls
+   29  2019-05-31_13:20:36\ git branch -vv
+   30  2019-05-31_13:20:43\ ls
+   31  2019-05-31_13:21:02\ git branch -a
+   32  2019-05-31_13:21:17\ git checkout remotes/origin/FileSub_04
+   33  2019-05-31_13:21:23\ git branch
+   34  2019-05-31_13:23:32\ git checkout origin/FileSub_04
+   35  2019-05-31_13:27:02\ git branch --all
+   36  2019-05-31_13:28:10\ git pull
+   37  2019-05-31_13:28:33\ cd
+   38  2019-05-31_13:28:35\ ls
+   39  2019-05-31_13:29:00\ rm -rf OpenSource
+   40  2019-05-31_13:29:12\ git clone https://github.com/wogus3602/OpenSource.git
+   41  2019-05-31_13:29:17\ ls
+   42  2019-05-31_13:29:22\ cd OpenSource
+   43  2019-05-31_13:29:22\ ls
+   44  2019-05-31_13:29:30\ vi EndGame.c
+   45  2019-05-31_13:29:42\ vi EndGame.h
+   46  2019-05-31_13:31:58\ vi Move.h
+   47  2019-05-31_13:32:34\ vi Move.c
+   48  2019-05-31_13:33:48\ vi Moce.c
+   49  2019-05-31_13:33:56\ vi Move.c
+   50  2019-05-31_14:05:30\ ls
+   51  2019-05-31_14:08:24\ git branch Comment_01
+   52  2019-05-31_14:08:27\ git branch
+   53  2019-05-31_14:08:46\ git checkout Comment_01
+   54  2019-05-31_14:09:47\ git checkout Comment_01
+   55  2019-05-31_14:09:52\ git branch
+   56  2019-05-31_14:10:01\ vi 2048.c
+   57  2019-05-31_14:12:53\ vi DrawBoard.c
+   58  2019-05-31_14:13:32\ vi initBoard.c
+   59  2019-05-31_14:13:50\ vi EndGame.c
+   60  2019-05-31_14:14:14\ vi Move.c
+   61  2019-05-31_14:14:49\ vi Move.h
+   62  2019-05-31_14:16:31\ vi Size.h
+   63  2019-05-31_14:17:04\ vi ScoreAndScheme.h
+   64  2019-05-31_14:17:19\ vi Move.c
+   65  2019-05-31_14:17:55\ vi initBoard.h
+   66  2019-05-31_14:18:11\ vi EndGame.h
+   67  2019-05-31_14:18:32\ vi DrawBoard.h
+   68  2019-05-31_14:18:53\ vi DrawBoard.h
+   69  2019-05-31_14:19:46\ git add -A
+   70  2019-05-31_14:19:52\ git status
+   71  2019-05-31_14:20:09\ git commit "Annotation"
+   72  2019-05-31_14:20:22\ git commit -m "Annotation"
+   73  2019-05-31_14:20:44\ git config --global user.email "jmy552000@naver.com"
+   74  2019-05-31_14:20:52\ git config --global user.name 
+   75  2019-05-31_14:21:02\ git config --global user.name "MinYoung"
+   76  2019-05-31_14:21:08\ git commit -m "Annotation"
+   77  2019-05-31_14:21:35\ git push origin Comment_01
+   78  2019-05-31_14:24:07\ HISTTIMEFORMAT="%Y-%m-%d_%H:%M:%S\ "
+   79  2019-05-31_14:24:10\ export HISTTIMEFORMAT 
+   80  2019-05-31_14:27:41\ history
+   81  2019-05-31_14:28:52\ history >log_MinYoung.txt
+   82  2019-05-31_14:28:54\ ls
+   83  2019-05-31_14:29:18\ history >log_정민영.txt
