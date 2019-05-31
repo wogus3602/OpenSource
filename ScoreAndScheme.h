@@ -1,10 +1,11 @@
-#ifndef _SCOREANDSCHEME_H
-
-#define _SCOREANDSCHEME_H
+#ifndef _SIZE_H
+/*보드판 사이즈를 선언 해주기 위한 헤더 파일이다.*/
+#define _SIZE_H
 
 #include <stdint.h>
 
-extern uint32_t score;	//unsigned는 부호비트를 제거해서 양수 범위를 2배로 늘리기 위해 사용
-extern uint8_t scheme;
+#define SIZE 4 // 보드판 사이즈가 4x4이기 때문에 4로 사이즈 정의
+
+extern uint8_t board[SIZE][SIZE]; // 보드판 2차원 배열 선언
 
 #endif

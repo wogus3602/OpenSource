@@ -1,9 +1,4 @@
 ﻿/*
-============================================================================
-영어로 써져 있는 부분은 원래 작성되어 있던 주석입니다.
-============================================================================
-*/
-/*
  ============================================================================
  Name        : 2048.c
  Author      : Maurits van der Schee
@@ -46,7 +41,6 @@ int main(int argc, char *argv[]) {
 
 	printf("\033[?25l\033[2J");
 
-	// register signal handler for when ctrl-c is pressed
 	signal(SIGINT, signal_callback_handler);//SIGINT는 리눅스에서 Ctrl+C를 눌렀을 때 프로세스를 종료시키는 역할을 한다.
 
 	initBoard(board);
@@ -54,25 +48,26 @@ int main(int argc, char *argv[]) {
 	while (true) {
 		c = getchar();
 		if (c == -1) { //TODO: maybe replace this -1 with a pre-defined constant(if it's in one of header files)
+
 			puts("\nError! Cannot read keyboard input!");
 			break;
 		}
 		switch (c) {
-		case 97:	// 'a' key
-		case 104:	// 'h' key
-		case 68:	// left arrow
+		case 97:	// 'a' 키
+		case 104:	// 'h' 키
+		case 68:	// 왼쪽 방향
 			success = moveUp(board);  break;
-		case 100:	// 'd' key
-		case 108:	// 'l' key
-		case 67:	// right arrow
+		case 100:	// 'd' 키
+		case 108:	// 'l' 키
+		case 67:	// 오른쪽 방향
 			success = moveDown(board); break;
-		case 119:	// 'w' key
-		case 107:	// 'k' key
-		case 65:	// up arrow
+		case 119:	// 'w' 키
+		case 107:	// 'k' 키
+		case 65:	// 위 방향
 			success = moveLeft(board);    break;
-		case 115:	// 's' key
-		case 106:	// 'j' key
-		case 66:	// down arrow
+		case 115:	// 's' 키
+		case 106:	// 'j' 키
+		case 66:	// 아래쪽 방향
 			success = moveRight(board);  break;
 		default: success = false;
 		}

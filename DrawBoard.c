@@ -1,3 +1,7 @@
+/*-----------------------------------------------------------------머릿주석-----------------------------------------------------------------*/
+/* 2048 보드판에 색을 넣어주고 랜덤한 위치에 2나 4를 넣어주고 색을 바꿔줄 때 사용한다.*/
+/* addRandom, getColor, drawBoard, 함수 사용.*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
@@ -7,7 +11,6 @@
 uint32_t score = 0;
 uint8_t scheme = 0;
 
-/*16013076 박재현*/
 /* board[][]에 '1(2진수)'or '2(2진수)' 를 랜덤한 위치에 넣어주는 함수 */
 void addRandom(uint8_t board[SIZE][SIZE]) {
 	static bool initialized = false;
@@ -38,7 +41,7 @@ void addRandom(uint8_t board[SIZE][SIZE]) {
 		board[x][y] = n; //(x,y) 에 n을 저장
 	}
 }
-/*16013076 박재현*/
+
 /* 숫자 타일 및 숫자 자체 색을 정해주는 함수 */
 void getColor(uint8_t value, char *color, size_t length) {
 	// original[],blackwhite[],bluered[] 의 값 순서 {빈타일색깔,·의 색깔,'2'숫자타일색깔,'2'숫자색깔,'4'숫자타일색깔,'4'숫자색깔,....,'16384'숫자타일색깔,'16384'숫자색깔}
@@ -62,7 +65,6 @@ void getColor(uint8_t value, char *color, size_t length) {
 	snprintf(color, length, "\033[38;5;%d;48;5;%dm", *foreground, *background); // 버퍼에 잠시 값(color)을 저장해둔다.
 }
 
-/*16013076 박재현*/
 /* 명령 프롬프트창에 게임 판을 그려주는 함수*/
 void drawBoard(uint8_t board[SIZE][SIZE]) {
 	uint8_t x, y;
@@ -105,5 +107,5 @@ void drawBoard(uint8_t board[SIZE][SIZE]) {
 	}
 	printf("\n");
 	printf("        ←,↑,→,↓ or q        \n");
-	printf("\033[A"); // one line up
+	printf("\033[A"); // 한 줄로 늘어서다.
 }
