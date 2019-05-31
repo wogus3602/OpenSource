@@ -1,0 +1,99 @@
+* 25b5fe2 (HEAD -> master, origin/master, origin/HEAD, origin/DOCTest_02, DOCTest_02) README_03
+* ac8a0ac README V02
+* 117003c README V02
+| * 2d309ee (origin/FileSub_03) hoit
+|/  
+* f031f40 Update README.md
+* e6e2a68 Update README.md
+*   6646c65 Merge pull request #28 from wogus3602/ReadAble_02
+|\  
+| * 77c200b (origin/ReadAble_02) edit
+|/  
+*   f9a8e24 readme
+|\  
+* | a2784c8 master
+* | 41173ed readme
+* | eddfd15 master
+* | fb94367 add log_file
+* | 14886d8 Readme파일 한국어판 추가/수정
+* | 4044709 2048.c
+* | b813e0f 설치방법 부분 주소 변경
+* | 6b923c0 README
+* | 86e8a6f Update README.md
+| | * 0bcc83e (origin/newmaster_01) master
+| |/  
+| *   84080b5 Merge branch 'master' of https://github.com/wogus3602/OpenSource
+| |\  
+| | *   0f696fb Merge pull request #27 from wogus3602/newmaster_03
+| | |\  
+| | | * 4ace1ff master
+| * | | 654a033 master
+| |/ /  
+| * |   baafdad master
+| |\ \  
+| | |/  
+| | * d67b2c6 master
+| |/  
+|/|   
+| * bde0f7c master
+| *   df01393 Merge branch 'master' of https://github.com/wogus3602/OpenSource
+| |\  
+| | *   6eeecf4 Merge pull request #25 from wogus3602/FileSub_01
+| | |\  
+| | | *   e92260f (origin/FileSub_01) Merge pull request #24 from wogus3602/master
+| | | |\  
+| |_|/ /  
+|/| | /   
+| | |/    
+| | *   4d481b9 Merge pull request #23 from wogus3602/merge_01
+| | |\  
+| | | *   ceec4d4 (origin/merge_01, merge_01) merge version1
+| | | |\  
+| |_|_|/  
+|/| | |   
+| | | * d86e129 (origin/ReadAble_01, origin/DOCTest_01, DOCTest_01) add log_file
+| | | * 1ef7ea7 Readme파일 한국어판 추가/수정
+| | | *   ed398b7 ReadAble과 merge
+| | | |\  
+| | | | * 80422de 방향키쪽 코드 수정
+| | | * | 400dd20 설치방법 부분 주소 변경
+| | |/ /  
+| * | |   97f7c35 master
+| |\ \ \  
+| | |_|/  
+| |/| |   
+| | * | 325264c (origin/newmaster_02) readmefile
+| |/ /  
+|/| |   
+| | | *   ee3aa82 (origin/merge_02, merge_02) Merge branch 'master' into merge_02
+| | | |\  
+| |_|/ /  
+|/| | /   
+| | |/    
+| | *   fdf36bb Merge pull request #20 from wogus3602/FileSub_01
+| | |\  
+| |/ /  
+| * | 2d69fc2 Update README.md
+* | | bec01c5 (origin/newmaster_03, origin/newmaster) 보드 초기화, 보드판 그림 그려주기, 방향키 , 게임 끝내기 분할 컴파일 완료
+| |/  
+|/|   
+| | * bfa73e4 (origin/testing, testing) test
+| |/  
+|/|   
+* | 199317c (origin/FileSub_02) header, part working
+* | 3556f69 (origin/leg_code_v2, origin/leg_code) 수정2
+* | a5b745f 수정
+* | 917280c legibility
+|/  
+* c2d5147 2048 주석 추가
+| * c2594c4 (origin/WindowVersion) WindowVersion
+| * 702393d (origin/test1) SIZE 4->5 TEST
+|/  
+| * 0e00bd2 (origin/ColorAndNumber) 색과숫자 관련 코드에 주석을 달았습니다. 관련 코드가 visual studio에서 문제가 발생하기 때문입니다.
+| * f2596c5 색과숫자
+|/  
+* d82df58 comment
+* 2b2ba5f screenshot
+* 118d2bb README
+* effce38 LICENSE
+* 8f95d56 new
