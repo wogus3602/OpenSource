@@ -1,7 +1,7 @@
 ﻿
 README (한국어)
 
-slack 주소 https://opensourcechat-group. slack.com/messages/DK41QTEG6/
+slack 주소 https://opensourcechat-group.slack.com/messages/DK41QTEG6/
 
 ![screenshot](pictures/screenshot.png)
 
