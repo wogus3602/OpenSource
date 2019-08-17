@@ -1,4 +1,5 @@
-﻿
+원본 : https://github.com/mevdschee/2048.c
+
 README (한국어)
 
 slack 주소 https://opensourcechat-group.slack.com/messages/DK41QTEG6/
